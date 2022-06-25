@@ -1,0 +1,38 @@
+.search__button {
+  text-transform: inherit !important;
+  color: white !important;
+  background-color: #ff5a5f !important;
+  font-size: 1.1rem !important;
+  font-weight: bold !important;
+  border: none !important;
+  transition: all 0.5s;
+}
+
+/* .search__button:focus {
+  outline-width: 0 !important;
+} */
+
+.search__button:hover {
+  border: none !important;
+  color: #ff5a5f !important;
+  background-color: white !important;
+}
+
+.search__datepicker {
+  position: absolute;
+  z-index: 10;
+  /* top: 0; */
+  left: 25%;
+  /* font-size:px; */
+  width: 100vw;
+}
+
+.datepicker {
+  border: 1px solid black;
+}
+
+.search__datepicker div {
+  /* font-family: "Courier New", Courier, monospace !important; */
+  font-size: 1rem;
+  font-weight: bolder !important;
+}

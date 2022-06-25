@@ -40,7 +40,7 @@
   background-color: #ff5a5f !important;
   font-size: 1.1rem !important;
   font-weight: bold !important;
-  border: none;
+  border: none !important;
   transition: all 0.5s !important;
 }
 
