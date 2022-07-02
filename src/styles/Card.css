@@ -1,0 +1,17 @@
+.card {
+  transition: all 0.3s !important;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__title,
+.card__price {
+  font-weight: bold !important;
+}
+
+.card__price {
+  margin-top: 5px !important;
+}

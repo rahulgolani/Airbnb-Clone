@@ -1,3 +1,20 @@
 .home {
   font-weight: bolder;
 }
+
+.home__section {
+  display: flex;
+  flex-direction: column;
+  margin: 30px;
+}
+
+.home__section1 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home__section2 {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
