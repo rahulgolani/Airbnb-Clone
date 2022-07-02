@@ -1,10 +1,10 @@
 .card {
   transition: all 0.3s !important;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .card:hover {
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 .card__title,
