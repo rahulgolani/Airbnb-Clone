@@ -19,10 +19,47 @@
 }
 
 .search__datepicker {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   z-index: 10;
   left: 25%;
-  width: 100vw;
+  /* width: 100vw; */
+}
+
+.search__options {
+  display: flex;
+}
+
+.search__options__guests {
+  flex: 1;
+  background-color: white;
+}
+.search__options__guests:focus {
+  outline-width: 0 !important;
+  border: none !important;
+}
+
+.search__options__guests:hover {
+  border: none !important;
+}
+
+.search__options__button {
+  text-transform: inherit !important;
+  font-size: 1.2rem !important;
+  font-weight: bold !important;
+  color: white !important;
+  background-color: #ff5a5f !important;
+  border: none !important;
+}
+
+.search__options__button:hover {
+  color: #ff5a5f !important;
+  background-color: white !important;
+}
+
+.search__options__button:focus {
+  outline-width: 0;
 }
 
 .datepicker {

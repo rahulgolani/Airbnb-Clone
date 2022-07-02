@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, TextField } from "@mui/material";
 import React, { useState } from "react";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css";
@@ -39,6 +39,17 @@ function Search() {
             ranges={[selectionRange]}
             onChange={handleSelect}
           />
+          <div className="search__options">
+            <TextField
+              type="number"
+              min="0"
+              className="search__options__guests"
+              placeholder="Number Of Guests"
+            ></TextField>
+            <Button className="search__options__button" variant="outlined">
+              Search Airbnb
+            </Button>
+          </div>
         </div>
       )}
     </div>
