@@ -18,3 +18,17 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width: 950px) {
+  .home__section1 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home__section2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

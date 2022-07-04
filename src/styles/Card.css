@@ -15,3 +15,9 @@
 .card__price {
   margin-top: 5px !important;
 }
+
+@media (max-width: 950px) {
+  .card {
+    margin-bottom: 3rem;
+  }
+}
