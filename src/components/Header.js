@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "../styles/Header.css";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -8,31 +8,33 @@ import LanguageIcon from "@mui/icons-material/Language";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { UserContext } from "../App";
 
 function Header() {
-  const [user, setUser] = useState({
-    first: "",
-    last: "",
-    initials: "RU",
-    picture: "",
-  });
+  const user = useContext(UserContext);
+  // const [user, setUser] = useState({
+  //   first: "",
+  //   last: "",
+  //   initials: "RU",
+  //   picture: "",
+  // });
 
-  useEffect(() => {
-    axios
-      .get("https://randomuser.me/api/")
-      .then((response) => {
-        const userData = response.data.results[0];
-        setUser({
-          first: userData.name.first,
-          last: userData.name.last,
-          initials: userData.name.first[0] + userData.name.last[0],
-          picture: userData.picture.large,
-        });
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://randomuser.me/api/")
+  //     .then((response) => {
+  //       const userData = response.data.results[0];
+  //       setUser({
+  //         first: userData.name.first,
+  //         last: userData.name.last,
+  //         initials: userData.name.first[0] + userData.name.last[0],
+  //         picture: userData.picture.large,
+  //       });
+  //     })
+  //     .catch((error) => {
+  //       console.log(error);
+  //     });
+  // }, []);
 
   return (
     <div className="header">
