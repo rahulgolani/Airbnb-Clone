@@ -76,3 +76,20 @@
 .datepicker__search__link {
   text-decoration: none;
 }
+
+@media (max-width: 950px) {
+  .search__datepicker {
+    left: 0;
+  }
+  .datepicker .rdrDefinedRangesWrapper {
+    display: none !important;
+  }
+  .datepicker {
+    width: 100vw !important;
+  }
+
+  .search__datepicker div {
+    font-size: 0.84rem !important;
+    width: 100vw !important;
+  }
+}
