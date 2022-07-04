@@ -18,7 +18,7 @@ function SearchResult({
   total,
 }) {
   return (
-    <Card sx={{ maxHeight: 250 }} className="card__result">
+    <Card className="card__result">
       <CardActionArea className="card__action__area">
         <CardMedia
           component="img"

@@ -7,6 +7,7 @@ import { Typography, Avatar } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [user, setUser] = useState({
@@ -37,10 +38,12 @@ function Header() {
     <div className="header">
       {/* Image */}
       <div className="header__image">
-        <img
-          src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
-          alt="Airbnb"
-        ></img>
+        <Link to="/">
+          <img
+            src="https://i.pinimg.com/originals/3c/bf/be/3cbfbe148597341fa56f2f87ade90956.png"
+            alt="Airbnb"
+          ></img>
+        </Link>
       </div>
       {/* Search  */}
       <div className="header__search">

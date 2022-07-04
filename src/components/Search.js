@@ -3,9 +3,11 @@ import React, { useState } from "react";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../styles/Search.css";
 function Search() {
+  const navigate = useNavigate();
   const [showDatePicker, setShowDatePicker] = useState(false);
 
   const [startDate, setStartDate] = useState(new Date());
@@ -46,9 +48,15 @@ function Search() {
               className="search__options__guests"
               placeholder="Number Of Guests"
             ></TextField>
-            <Button className="search__options__button" variant="outlined">
+            {/* <Link className="datepicker__search__link" to="search"> */}
+            <Button
+              onClick={() => navigate("search")}
+              className="search__options__button"
+              variant="outlined"
+            >
               Search Airbnb
             </Button>
+            {/* </Link> */}
           </div>
         </div>
       )}

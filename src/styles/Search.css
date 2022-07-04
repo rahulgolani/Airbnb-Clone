@@ -51,6 +51,7 @@
   color: white !important;
   background-color: #ff5a5f !important;
   border: none !important;
+  /* height: 100%; */
 }
 
 .search__options__button:hover {
@@ -70,4 +71,8 @@
   /* font-family: "Courier New", Courier, monospace !important; */
   font-size: 1rem;
   font-weight: bolder !important;
+}
+
+.datepicker__search__link {
+  text-decoration: none;
 }
