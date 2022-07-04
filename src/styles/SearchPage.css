@@ -1,0 +1,14 @@
+.searchPage {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.search__filters {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.search__filter__chip {
+  margin-right: 10px !important;
+}

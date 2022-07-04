@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div className="footer">
       <Typography className="footer__content" variant="body2">
-        <CopyrightIcon fontSize="small" />
+        <CopyrightIcon />
         {` @${new Date().getFullYear()} - Airbnb -No Rights Reserved`}
       </Typography>
     </div>
