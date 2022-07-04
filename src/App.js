@@ -6,15 +6,27 @@ import Home from "./components/Home";
 import { Route, Routes } from "react-router-dom";
 import SearchPage from "./components/SearchPage";
 import axios from "axios";
+import Profile from "./components/Profile";
 
 export const UserContext = createContext();
 
 function App() {
   const [user, setUser] = useState({
-    first: "",
-    last: "",
-    initials: "RU",
-    picture: "",
+    first: "", //"Jesus",
+    last: "", //"Dumont",
+    initials: "", //"JD",
+    picture: "", //'https://randomuser.me/api/portraits/men/97.jpg',
+    details: {
+      gender: "", //"male",
+      dob: {
+        date: "", // "1945-03-20T12:48:16.093Z",
+      },
+      email: "", // "jesus.dumont@example.com",
+      cell: "", // "079 757 60 07",
+      location: {
+        country: "", //"Switzerland",
+      },
+    },
   });
 
   useEffect(() => {
@@ -41,6 +53,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="search" element={<SearchPage />} />
+          <Route path="profile" element={<Profile />} />
           <Route path="/" element={<Home />} />
         </Routes>
         {/* FOOTER */}
