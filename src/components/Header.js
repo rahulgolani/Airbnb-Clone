@@ -65,8 +65,14 @@ function Header() {
         <Typography variant="h6" className="header__menu__title pointer">
           Become a Host
         </Typography>
-        <LanguageIcon fontSize="large" className="pointer" />
-        <KeyboardArrowDownIcon fontSize="large" className="pointer" />
+        <LanguageIcon
+          fontSize="large"
+          className="header__menu__language pointer"
+        />
+        <KeyboardArrowDownIcon
+          fontSize="large"
+          className="header__menu__arrow pointer"
+        />
 
         <Avatar
           sx={{ bgcolor: "#FF5A5F" }}

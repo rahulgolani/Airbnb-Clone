@@ -25,7 +25,7 @@
 }
 
 .header__search {
-  flex: 1;
+  flex: 1 1 auto !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -43,4 +43,30 @@
 
 .pointer {
   cursor: pointer;
+}
+
+@media (max-width: 950px) {
+  .header__image img {
+    height: 4rem;
+    margin-left: 0;
+  }
+
+  .header__menu__title {
+    /* font-size: 1rem !important; */
+    display: none !important;
+  }
+  .header__menu__language {
+    /* font-size: 1rem !important; */
+    display: none !important;
+  }
+
+  .header__menu__arrow {
+    display: none !important;
+  }
+
+  .header__menu {
+    justify-content: flex-end;
+    width: 3rem;
+    margin-right: 0.5rem;
+  }
 }
