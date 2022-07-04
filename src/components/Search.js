@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { DateRangePicker } from "react-date-range";
 import "react-date-range/dist/styles.css";
 import "react-date-range/dist/theme/default.css";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 import "../styles/Search.css";
 function Search() {
@@ -48,7 +48,6 @@ function Search() {
               className="search__options__guests"
               placeholder="Number Of Guests"
             ></TextField>
-            {/* <Link className="datepicker__search__link" to="search"> */}
             <Button
               onClick={() => navigate("search")}
               className="search__options__button"
@@ -56,7 +55,6 @@ function Search() {
             >
               Search Airbnb
             </Button>
-            {/* </Link> */}
           </div>
         </div>
       )}

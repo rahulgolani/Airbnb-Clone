@@ -1,4 +1,5 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useContext } from "react";
+// import {useState,useEffect} from 'react'
 import "../styles/Header.css";
 import TextField from "@mui/material/TextField";
 import InputAdornment from "@mui/material/InputAdornment";
@@ -6,7 +7,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { Typography, Avatar, Tooltip } from "@mui/material";
 import LanguageIcon from "@mui/icons-material/Language";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import axios from "axios";
+// import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { UserContext } from "../App";
 
