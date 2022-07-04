@@ -18,46 +18,50 @@ function SearchPage() {
         Stays Nearby
       </Typography>
       <div className="search__filters">
-        <Chip
-          className="search__filter__chip"
-          label="Cancellation Flexibility"
-          color="primary"
-          //   variant="outlined"
-          icon={<CancelIcon />}
-          onClick={handleClick}
-        />
-        <Chip
-          className="search__filter__chip"
-          label="Type Of Place"
-          color="primary"
-          //   variant="outlined"
-          icon={<OtherHousesIcon />}
-          onClick={handleClick}
-        />
-        <Chip
-          className="search__filter__chip"
-          label="Price"
-          color="primary"
-          //   variant="outlined"
-          icon={<CurrencyRupeeIcon />}
-          onClick={handleClick}
-        />
-        <Chip
-          className="search__filter__chip"
-          label="Rooms and Beds"
-          color="primary"
-          //   variant="outlined"
-          icon={<HotelIcon />}
-          onClick={handleClick}
-        />
-        <Chip
-          className="search__filter__chip"
-          label="More Filters"
-          color="primary"
-          //   variant="outlined"
-          icon={<FilterAltIcon />}
-          onClick={handleClick}
-        />
+        <div className="search__filters__row1">
+          <Chip
+            className="search__filter__chip"
+            label="Cancellation Flexibility"
+            color="primary"
+            //   variant="outlined"
+            icon={<CancelIcon />}
+            onClick={handleClick}
+          />
+          <Chip
+            className="search__filter__chip"
+            label="Type Of Place"
+            color="primary"
+            //   variant="outlined"
+            icon={<OtherHousesIcon />}
+            onClick={handleClick}
+          />
+          <Chip
+            className="search__filter__chip"
+            label="Price"
+            color="primary"
+            //   variant="outlined"
+            icon={<CurrencyRupeeIcon />}
+            onClick={handleClick}
+          />
+        </div>
+        <div className="search__filters__row2">
+          <Chip
+            className="search__filter__chip"
+            label="Rooms and Beds"
+            color="primary"
+            //   variant="outlined"
+            icon={<HotelIcon />}
+            onClick={handleClick}
+          />
+          <Chip
+            className="search__filter__chip"
+            label="More Filters"
+            color="primary"
+            //   variant="outlined"
+            icon={<FilterAltIcon />}
+            onClick={handleClick}
+          />
+        </div>
       </div>
       <div className="search__results">
         <SearchResult

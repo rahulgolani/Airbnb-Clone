@@ -1,6 +1,14 @@
 .searchPage {
   margin-top: 10px;
   margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search__filters__row1 {
+  display: flex;
+}
+.search__filters__row2 {
+  display: flex;
 }
 
 .search__filters {
@@ -11,4 +19,13 @@
 
 .search__filter__chip {
   margin-right: 10px !important;
+}
+
+@media (max-width: 620px) {
+  .search__filters {
+    flex-direction: column;
+  }
+  .search__filters__row2 {
+    margin-top: 10px;
+  }
 }
